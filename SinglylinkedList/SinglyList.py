@@ -126,16 +126,3 @@ class SinglyList:
             p = p._next
 
         return self.delete_next(p)
-
-
-
-"""Singlylinked List Testcase"""
-if __name__ == "__main__":
-    s = SinglyList()
-    s.insert_first("1")
-    s.insert_last("2")
-    s.insert_last("3")
-    s.insert_last("4") 
-    s.insert_next("5", s.head().next()) 
-
-    print(s)  
