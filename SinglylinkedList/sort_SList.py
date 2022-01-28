@@ -1,4 +1,4 @@
-#SignlyList 모듈 
+#SignlyList module
 
 from SinglyList import SinglyList 
 
@@ -34,6 +34,6 @@ s.insert_last("2")
 s.insert_first("5")
 print(s)
 
-"""정렬된 상태로 변환"""
+"""정렬된 상태로 변환 Testcase"""
 s = sort_slist(s)
 print(s)
