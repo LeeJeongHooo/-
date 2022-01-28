@@ -26,7 +26,7 @@ def sort_slist(target):
     return sorted
 #미리 정렬시키기위해 만든 함수정의
 
-"""test case"""
+"""test case sorted"""
 s = SinglyList()
 s.insert_first("1")
 s.insert_first("3")
