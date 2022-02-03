@@ -42,7 +42,7 @@ class DoublelinkedList:
     def __str__(self):
         
         p = self._header._next
-        ret_str = '{}: '.format(self._size)
+        ret_str = ""
         ret_str += 'Header'
         while p is not self.trailer():
             ret_str += ' <-> {}'.format(p)
