@@ -2,8 +2,8 @@
 """ 단순연결리스트의 단점을 보안하기 위해 만들어진 자료구조 """
 
 class DoublelinkedList:
-    class _Node:
-        def __init__(self, data, prev, next):
+    class _Node:               
+        def __init__(self, data, prev, next):       #노드 클래스
             self._data = data
             self._prev = prev
             self._next = next
@@ -30,6 +30,7 @@ class DoublelinkedList:
             return str(self._data)
 
     def __init__(self):
+        """이중연결리스트 양방향으로 이동가능하며 header와 trailer도 노드구조체로 'data'가 없는 형태로 생성"""                                           
         self._header = self._Node(None, None, None)
         self._trailer = self._Node(None, None, None)
         self._header._next = self._trailer
